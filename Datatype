@@ -1,0 +1,269 @@
+Primitive (Basic) Data Types in C 
+
+Primitive data types are the fundamental data types provided by C. They store single values and form the building blocks for other data types. 
+
+List of Primitive Data Types 
+
+int 
+
+float 
+
+double 
+
+char 
+
+void 
+
+ 
+
+1. int (Integer) 
+
+Used to store whole numbers 
+
+Size: 4 bytes (depends on compiler) 
+
+Can store positive and negative values 
+
+Example: 
+
+#include <stdio.h> 
+ 
+int main() { 
+   int number = 25; 
+   printf("Number = %d", number); 
+   return 0; 
+} 
+ 
+
+ 
+
+2. float 
+
+Used to store decimal values 
+
+Size: 4 bytes 
+
+Precision: up to 6 decimal places 
+
+Example: 
+
+#include <stdio.h> 
+ 
+int main() { 
+   float salary = 25000.50; 
+   printf("Salary = %f", salary); 
+   return 0; 
+} 
+ 
+
+ 
+
+3. double 
+
+Used to store decimal values with higher precision 
+
+Size: 8 bytes 
+
+Precision: up to 15 decimal places 
+
+Example: 
+
+#include <stdio.h> 
+ 
+int main() { 
+   double pi = 3.14159265359; 
+   printf("Value of pi = %lf", pi); 
+   return 0; 
+} 
+ 
+
+ 
+
+4. char 
+
+Used to store a single character 
+
+Size: 1 byte 
+
+Stored internally as ASCII value 
+
+Example: 
+
+#include <stdio.h> 
+ 
+int main() { 
+   char grade = 'A'; 
+   printf("Grade = %c", grade); 
+   return 0; 
+} 
+ 
+
+ 
+
+5. void 
+
+Represents no value 
+
+Commonly used with functions that do not return anything 
+
+Example: 
+
+#include <stdio.h> 
+ 
+void display() { 
+   printf("Welcome to C Programming"); 
+} 
+ 
+int main() { 
+   display(); 
+   return 0; 
+} 
+ 
+
+ 
+
+Summary Table 
+
+Data Type 
+
+Purpose 
+
+Size 
+
+int 
+
+Stores integers 
+
+4 bytes 
+
+float 
+
+Stores decimal values 
+
+4 bytes 
+
+double 
+
+Stores high-precision decimals 
+
+8 bytes 
+
+char 
+
+Stores single character 
+
+1 byte 
+
+void 
+
+Represents no value 
+
+— 
+
+ 
+
+Variants of int in C 
+
+short int 
+
+unsigned short int 
+
+int 
+
+unsigned int 
+
+long int 
+
+unsigned long int 
+
+long long int 
+
+unsigned long long int 
+
+Single Example Program (All int Variants) 
+
+#include <stdio.h> 
+ 
+int main() { 
+ 
+   short int a = -32768; 
+   unsigned short int b = 65535; 
+ 
+   int c = -100000; 
+   unsigned int d = 100000; 
+ 
+   long int e = -123456789; 
+   unsigned long int f = 123456789; 
+ 
+   long long int g = -1234567890123; 
+   unsigned long long int h = 1234567890123; 
+ 
+   printf("short int a = %hd\n", a); 
+   printf("unsigned short int b = %hu\n\n", b); 
+ 
+   printf("int c = %d\n", c); 
+   printf("unsigned int d = %u\n\n", d); 
+ 
+   printf("long int e = %ld\n", e); 
+   printf("unsigned long int f = %lu\n\n", f); 
+ 
+   printf("long long int g = %lld\n", g); 
+   printf("unsigned long long int h = %llu\n", h); 
+ 
+   return 0; 
+} 
+ 
+
+ 
+
+Key Notes (Important for Exams & Interviews) 
+
+signed is default for int 
+
+unsigned stores only positive values 
+
+long long int is used for very large numbers 
+
+Format specifiers must match the data type 
+
+ 
+
+Quick Summary Table 
+
+Data Type 
+
+Format Specifier 
+
+short int 
+
+%hd 
+
+unsigned short int 
+
+%hu 
+
+int 
+
+%d 
+
+unsigned int 
+
+%u 
+
+long int 
+
+%ld 
+
+unsigned long int 
+
+%lu 
+
+long long int 
+
+%lld 
+
+unsigned long long int 
+
+%llu 
+
+ 
